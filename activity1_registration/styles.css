@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* This rule styles the form container. The background-color: #fff rule sets the background color of the form container to white, the padding: 20px rule adds 20 pixels of padding around the form, and the border-radius: 5px rule rounds the corners of the form container. The box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1) rule adds a subtle shadow around the form container. */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* This rule styles the form. The display: flex and flex-direction: column rules make the form a flex container and arrange its children (the labels and inputs) in a column. The width: 300px rule sets the width of the form to 300 pixels. */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+/* This rule styles the labels. The margin-bottom: 10px rule adds 10 pixels of margin below the labels. */
+label {
+    margin-bottom: 10px;
+}
+
+/* This rule styles the inputs. The margin-bottom: 20px rule adds 20 pixels of margin below the inputs. The padding: 10px rule adds 10 pixels of padding inside the labels and inputs. The border: 1px solid #ddd rule adds a 1-pixel solid border around the labels and inputs with a color of light gray. The border-radius: 5px rule rounds the corners of the labels and inputs. */
+input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* This rule styles the submit button. The background-color: #007BFF rule sets the background color of the button to a blue color. The color: #fff rule sets the text color of the button to white. The cursor: pointer rule changes the cursor to a pointer when hovering over the button. */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Add this line */
+}
+
+/* This rule changes the background color of the button to a darker blue when you hover over it. The transition property makes the color change gradually over 0.3 seconds. */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
